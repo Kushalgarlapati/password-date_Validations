@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password & date validation</title>
+</head>
+<center><body>
+    <form action="./successfull.html">
+        <h1>Password & Date Validations</h1><br>
+
+        <label for="password"><b>Password:</b></label><br>
+        <input type="text" id="password" name="password" 
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+            title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters"
+            autocomplete="off" required><br><br>
+
+        <label for="date"><b>Date:</b></label><br>
+        <input type="text" pattern="(?:19|20)(?:[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|
+        (?:(?!02)(?:0[1-9]|1[0-2])-(?:29|30))|(?:(?:0[13578]|1[02])-31))|(?:[13579][26]|[02468][048])-02-29)" title="Please enter in YYYY-MM-DD" required><br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+</body></center>
+</html>
